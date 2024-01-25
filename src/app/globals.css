@@ -18,16 +18,40 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background-color: #576eff;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.react-datepicker__day--in-range{
+    @apply
+
+  bg-indigo-500 !important
+}
+.react-datepicker__day--range-end{
+  @apply
+
+  bg-indigo-300 text-indigo-600 !important
+}
+
+.react-datepicker__day--in-selecting-range{
+  @apply
+  
+  bg-indigo-300 text-indigo-600 !important
+}
+.react-datepicker__day--today{
+  @apply
+
+  bg-gray-100 
+  text-indigo-500 !important
 }
